@@ -16,7 +16,7 @@
     
 Python packages that will be used by the program. `os`, `sys`, `time`, and `shutil` are all built in, so there is no need to use `pip` to install them. `geopy` and `exifread` are not part of Python, so following commands were used to install them. 
 
-	pip install geopy
+    pip install geopy
     pip install exifread
 
 Ensure that `pip` is installed already and that Python has been added to PATH.
