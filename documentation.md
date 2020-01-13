@@ -35,8 +35,8 @@ Two packages that are only for colored outputs to the command line (not IDLE). T
     
 Once again, ensure that `pip` is installed already and that Python has been added to PATH.
 
-<div style="page-break-after: always;"></div>
-    
+&nbsp;
+
 ### Section 3
 
 	def display(data, message, verbose = False):
@@ -66,8 +66,6 @@ Degrees can be thought of as hours, and since there are 60 minutes in an hour an
 However, the DD coordinates still need to be negated based on the hemisphere (N/S or E/W). The DD coordinates are negative in the southern or western hemispheres, so an inline-if-statement handles these cases when returning the DD coordinate.
 
 &nbsp;
-
-<div style="page-break-after: always;"></div>
 
 ### Section 5
 
@@ -105,7 +103,7 @@ The dictionary is added to later in the program just after where reverse-geocodi
 
 It is possible that `date_folder` and also `location_folder` already exist. It should be noted that `location_folder` will always exist inside of `date_folder`, which is why the chained `os.mkdir()` commands will work. The method first stores the value list under the `file` key in the `data` dictionary in its own local variables. Then, it checks to see if the directories that are being pointed to already exist; if they don't it will create them. At the end, the file gets moved from its `source` to its `destination`.
 
-<div style="page-break-after: always;"></div>
+&nbsp;
 
 ### Section 7
 
@@ -136,8 +134,6 @@ Change the working directory of the program from the location of the program (`D
 Initialize the ArcGIS geocoder. No API key is required for initialization, so no arguments are necessary. Documentation for the initializing thr geocoders provided by `geopy` (which includes ArcGIS) can be found at [https://geopy.readthedocs.io/en/stable](). 
 
 &nbsp;
-
-<div style="page-break-after: always;"></div>
 
 ### Section 10
 
@@ -180,8 +176,6 @@ Define a dictionary and two lists to keep track of the files. The two lists are 
 
 &nbsp;
 
-<div style="page-break-after: always;"></div>
-
 ### Section 13
 
 	for file in files:
@@ -205,8 +199,6 @@ Since a location is not known yet, the default value for the inner folder, whose
 Open the file so that its EXIF data can be read. `exifread` is used here to store the EXIF tags into the `tags` dictionary. `tags` is then filtered for its GPS-coordinate-related tags, and the values of those keys are stored in the `gps` list.
   
 &nbsp;
-
-<div style="page-break-after: always;"></div>
 
 ### Section 15
 
@@ -241,7 +233,7 @@ Based on the result, slice either the number and everything after the road name 
 
 If there were no GPS values, no reverse-geocoding is necessary. The file can then be noted down in the `nongeotagged` list. No changes to `inner` will take place as the the file will be stored in "Unknown Location", which is the default value of `inner`.
 
-<div style="page-break-after: always;"></div>
+&nbsp;
 
 ### Section 16
 
